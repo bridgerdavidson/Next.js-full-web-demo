@@ -8,6 +8,7 @@ import {
   Revenue,
 } from './definitions';
 import { formatCurrency } from './utils';
+import { createServerSearchParamsForServerPage } from 'next/dist/server/request/search-params';
 
 const sql = postgres(process.env.POSTGRES_URL!, { ssl: 'require' });
 
